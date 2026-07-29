@@ -132,11 +132,13 @@
     font-size:13.5px;
     letter-spacing:0.18em;
     text-transform:uppercase;
-    color: #7E8374;
+    color: var(--tinta);
+    -webkit-text-stroke:0.5px currentColor;
+    paint-order:stroke fill;
     margin-bottom:10px;
   }
 
-  .lbl .opt{ text-transform:none; letter-spacing:0; font-style:italic; font-family:'EB Garamond', serif; color: var(--tinta-2); }
+  .lbl .opt{ text-transform:none; letter-spacing:0; font-style:italic; font-family:'EB Garamond', serif; color: var(--tinta-2); -webkit-text-stroke:0; }
 
   input[type="text"], textarea{
     width:100%;
